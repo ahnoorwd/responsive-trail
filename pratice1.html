@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pratice 1</title>
+    <style>
+    .container
+    {
+        width:1200px;
+        height: 700px;
+        border: 2px solid red;
+        margin :0 auto;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        height: auto;
+    }
+    /* .leftside{
+        width: 600px;
+        height: 500px;
+        border: 2px solid blue;
+        padding: 10px;
+        margin: 10px;
+    } */
+    .leftside{
+        width: 400px;
+        height: 600px;
+        border: 2px solid blue;
+        padding: 10px;
+        margin: 10px;
+        background-color: aqua;
+    }
+    .rightside{
+       
+        width: 500px;
+        height: 500px;
+        border: 2px solid blue;
+        padding: 10px;
+        margin: 10px;
+        background-color: brown;
+    
+    }
+    @media screen and (max-width:550px){
+        .container{
+            grid-template-columns: repeat(1,1fr);
+        }
+        
+    }
+    </style>
+</head>
+<body>
+     
+      <div class="container">
+        <div class="leftside">
+
+        </div>
+        <div class="rightside">
+  
+        </div>
+      </div>
+      
+     
+</body>
+</html>
